@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Traefik.Contracts", "Traefik.Contracts\Traefik.Contracts.csproj", "{F7E5657B-4879-4135-B9B5-EC4ADDC24189}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0AE4D6C7-4E56-412B-87F6-10D05A7F4A15}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7E5657B-4879-4135-B9B5-EC4ADDC24189}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7E5657B-4879-4135-B9B5-EC4ADDC24189}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7E5657B-4879-4135-B9B5-EC4ADDC24189}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7E5657B-4879-4135-B9B5-EC4ADDC24189}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A8C4D206-1E23-43DD-934E-97C53D19066B}
+	EndGlobalSection
+EndGlobal
