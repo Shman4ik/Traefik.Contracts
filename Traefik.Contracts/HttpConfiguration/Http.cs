@@ -12,7 +12,7 @@ namespace Traefik.Contracts.HttpConfiguration
 		public Dictionary<string, Service> Services { get; set; }
 
 		[JsonPropertyName("middlewares")]
-		public Dictionary<string, BaseMiddleware> Middlewares { get; set; }
+		public Dictionary<string, Contracts.Middlewares.BaseMiddleware> Middlewares { get; set; }
 
 		[JsonPropertyName("serversTransports")]
 		public Dictionary<string, Serverstransport> ServersTransports { get; set; }
