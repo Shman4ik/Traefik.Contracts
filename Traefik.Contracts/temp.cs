@@ -1,33 +1,5 @@
 ﻿namespace Traefik.Contracts
 {
-
-	public class Middlewares
-	{
-		public Middleware00 Middleware00 { get; set; }
-		public BasicAuthMiddleware Middleware01 { get; set; }
-		public BufferingMiddleware Middleware02 { get; set; }
-		public ChainMiddleware Middleware03 { get; set; }
-		public Middleware04 Middleware04 { get; set; }
-		public Middleware05 Middleware05 { get; set; }
-		public Middleware06 Middleware06 { get; set; }
-		public Middleware07 Middleware07 { get; set; }
-		public Middleware08 Middleware08 { get; set; }
-		public Middleware09 Middleware09 { get; set; }
-		public Middleware10 Middleware10 { get; set; }
-		public Middleware11 Middleware11 { get; set; }
-		public Middleware12 Middleware12 { get; set; }
-		public Middleware13 Middleware13 { get; set; }
-		public Middleware14 Middleware14 { get; set; }
-		public Middleware15 Middleware15 { get; set; }
-		public Middleware16 Middleware16 { get; set; }
-		public Middleware17 Middleware17 { get; set; }
-		public Middleware18 Middleware18 { get; set; }
-		public Middleware19 Middleware19 { get; set; }
-		public Middleware20 Middleware20 { get; set; }
-		public Middleware21 Middleware21 { get; set; }
-		public Middleware22 Middleware22 { get; set; }
-	}
-
 	public class Serverstransport1
 	{
 		public string serverName { get; set; }

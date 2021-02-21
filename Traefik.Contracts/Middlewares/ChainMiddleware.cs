@@ -1,8 +1,11 @@
-﻿namespace Traefik.Contracts.Middlewares
+﻿using System.Text.Json.Serialization;
+
+namespace Traefik.Contracts.Middlewares
 {
-	public class ChainMiddleware
+	public class ChainMiddleware : BaseMiddleware
 	{
-		public Chain chain { get; set; }
+		[JsonPropertyName("chain")]
+		public Chain Chain { get; set; }
 	}
 
 }
