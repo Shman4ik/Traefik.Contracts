@@ -1,5 +1,4 @@
 ﻿using System.Text.Json.Serialization;
-using Traefik.Contracts.TcpConfiguration;
 
 namespace Traefik.Contracts.UdpConfiguration
 {

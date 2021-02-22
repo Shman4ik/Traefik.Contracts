@@ -3,7 +3,6 @@ using Traefik.Contracts.HttpConfiguration;
 using Traefik.Contracts.TcpConfiguration;
 using Traefik.Contracts.TlcConfiguration;
 using Traefik.Contracts.UdpConfiguration;
-using Tls = Traefik.Contracts.TlcConfiguration.Tls;
 
 namespace Traefik.Contracts
 {
@@ -11,9 +10,15 @@ namespace Traefik.Contracts
 	{
 		[JsonPropertyName("http")]
 		public Http Http { get; set; }
-		public Tcp tcp { get; set; }
-		public Udp udp { get; set; }
-		public Tls tls { get; set; }
+
+		[JsonPropertyName("tcp")]
+		public Tcp Tcp { get; set; }
+
+		[JsonPropertyName("udp")]
+		public Udp Udp { get; set; }
+
+		[JsonPropertyName("tls")]
+		public TlcConfiguration.Tls Tls { get; set; }
 
 	}
 }

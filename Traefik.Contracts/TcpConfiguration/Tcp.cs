@@ -7,6 +7,8 @@ namespace Traefik.Contracts.TcpConfiguration
 	{
 		[JsonPropertyName("routers")]
 		public Dictionary<string, TcpRouter> Routers { get; set; }
-		public Dictionary<string, BaseTcpService> services { get; set; }
+
+		[JsonPropertyName("services")]
+		public Dictionary<string, BaseTcpService> Services { get; set; }
 	}
 }
