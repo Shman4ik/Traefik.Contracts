@@ -2,16 +2,10 @@
 
 namespace Traefik.Contracts.HttpConfiguration
 {
-	public class Service
+	public class LoadbalancerHttpService : BaseHttpService
 	{
 		[JsonPropertyName("loadBalancer")]
 		public Loadbalancer LoadBalancer { get; set; }
-
-		[JsonPropertyName("weighted")]
-		public Weighted Weighted { get; set; }
-
-		[JsonPropertyName("mirroring")]
-		public Mirroring Mirroring { get; set; }
 	}
 
 }

@@ -1,8 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 using Traefik.Contracts.HttpConfiguration;
+using Traefik.Contracts.TcpConfiguration;
+using Traefik.Contracts.TlcConfiguration;
+using Traefik.Contracts.UdpConfiguration;
+using Tls = Traefik.Contracts.TlcConfiguration.Tls;
 
 namespace Traefik.Contracts
 {
@@ -12,7 +13,7 @@ namespace Traefik.Contracts
 		public Http Http { get; set; }
 		public Tcp tcp { get; set; }
 		public Udp udp { get; set; }
-		public Tls5 tls { get; set; }
+		public Tls tls { get; set; }
 
 	}
 }
