@@ -2,7 +2,7 @@
 
 namespace Traefik.Contracts.Middlewares
 {
-	public class Ratelimit
+	public class RateLimit
 	{
 		[JsonPropertyName("average")]
 		public int average { get; set; }

@@ -8,7 +8,7 @@ namespace Traefik.Contracts.Middlewares
 		public int amount { get; set; }
 
 		[JsonPropertyName("sourceCriterion")]
-		public SourceСriterion sourceCriterion { get; set; }
+		public SourceCriterion sourceCriterion { get; set; }
 	}
 
 }
