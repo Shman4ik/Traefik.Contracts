@@ -4,9 +4,9 @@
 Помогает реализовать [HTTP](https://doc.traefik.io/traefik/providers/http/) провайдер для .Net сервисов.
 
 # RoadMap
-* [ ] HTTP support
-* [ ] TCP support
-* [ ] UDP support
+* [X] HTTP support
+* [X] TCP support
+* [X] UDP support
 * [ ] Add comments
 * [ ] Nuget package
 * [ ] AutoTest
