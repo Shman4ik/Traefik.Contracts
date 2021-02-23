@@ -13,10 +13,11 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
+- script: echo "##vso[build.updatebuildnumber]'0.9'$(Rev:.r)"
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
 - task: DotNetCoreCLI@2
   inputs:
     command: 'pack'
     packagesToPack: '**/*.csproj'
-    versioningScheme: 'byBuildNumber'
+    versioningScheme: byBuildNumber
