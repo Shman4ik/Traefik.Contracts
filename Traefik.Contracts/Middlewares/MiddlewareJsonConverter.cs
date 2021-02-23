@@ -10,6 +10,10 @@ namespace Traefik.Contracts.Middlewares
 		{
 			while (reader.Read())
 			{
+				if (reader.TokenType == JsonTokenType.StartObject)
+				{
+					continue;
+				}
 				if (reader.TokenType == JsonTokenType.EndObject)
 				{
 					throw new JsonException();
@@ -107,6 +111,12 @@ namespace Traefik.Contracts.Middlewares
 							reader.Read();
 							return new PassTLSClientCertMiddleware() { PassTLSClientCert = passTLSClientCert };
 						}
+					case "plugin":
+						{
+							var plugin = JsonSerializer.Deserialize<Plugin>(ref reader, options);
+							reader.Read();
+							return new PluginMiddleware() { Plugin = plugin };
+						}
 					case "rateLimit":
 						{
 							var rateLimit = JsonSerializer.Deserialize<RateLimit>(ref reader, options);
@@ -166,70 +176,74 @@ namespace Traefik.Contracts.Middlewares
 			{
 				case AddPrefixMiddleware addPrefixMiddleware:
 					JsonSerializer.Serialize(writer, addPrefixMiddleware, options);
-					break;
+					return;
 				case BasicAuthMiddleware basicAuthMiddleware:
 					JsonSerializer.Serialize(writer, basicAuthMiddleware, options);
-					break;
+					return;
 				case BufferingMiddleware bufferingMiddleware:
 					JsonSerializer.Serialize(writer, bufferingMiddleware, options);
-					break;
+					return;
 				case ChainMiddleware chainMiddleware:
 					JsonSerializer.Serialize(writer, chainMiddleware, options);
-					break;
+					return;
 				case CircuitBreakerMiddleware circuitBreakerMiddleware:
 					JsonSerializer.Serialize(writer, circuitBreakerMiddleware, options);
-					break;
+					return;
 				case CompressMiddleware compressMiddleware:
 					JsonSerializer.Serialize(writer, compressMiddleware, options);
-					break;
+					return;
 				case ContentTypeMiddleware contentTypeMiddleware:
 					JsonSerializer.Serialize(writer, contentTypeMiddleware, options);
-					break;
+					return;
 				case DigestAuthMiddleware digestAuthMiddleware:
 					JsonSerializer.Serialize(writer, digestAuthMiddleware, options);
-					break;
+					return;
 				case ErrorsMiddleware errorsMiddleware:
 					JsonSerializer.Serialize(writer, errorsMiddleware, options);
-					break;
+					return;
 				case ForwardAuthMiddleware forwardAuthMiddleware:
 					JsonSerializer.Serialize(writer, forwardAuthMiddleware, options);
-					break;
+					return;
 				case HeadersMiddleware headersMiddleware:
 					JsonSerializer.Serialize(writer, headersMiddleware, options);
-					break;
+					return;
 				case InFlightReqMiddleware inFlightReqMiddleware:
 					JsonSerializer.Serialize(writer, inFlightReqMiddleware, options);
-					break;
+					return;
 				case IpWhiteListMiddleware ipWhiteListMiddleware:
 					JsonSerializer.Serialize(writer, ipWhiteListMiddleware, options);
-					break;
+					return;
 				case PassTLSClientCertMiddleware passTlsClientCertMiddleware:
 					JsonSerializer.Serialize(writer, passTlsClientCertMiddleware, options);
-					break;
+					return;
+				case PluginMiddleware pluginMiddleware:
+					JsonSerializer.Serialize(writer, pluginMiddleware, options);
+					return;
 				case RateLimitMiddleware rateLimitMiddleware:
 					JsonSerializer.Serialize(writer, rateLimitMiddleware, options);
-					break;
+					return;
 				case RedirectRegexMiddleware redirectRegexMiddleware:
 					JsonSerializer.Serialize(writer, redirectRegexMiddleware, options);
-					break;
+					return;
 				case RedirectSchemeMiddleware redirectSchemeMiddleware:
 					JsonSerializer.Serialize(writer, redirectSchemeMiddleware, options);
-					break;
+					return;
 				case ReplacePathMiddleware replacePathMiddleware:
 					JsonSerializer.Serialize(writer, replacePathMiddleware, options);
-					break;
+					return;
 				case ReplacePathRegexMiddleware replacePathRegexMiddleware:
 					JsonSerializer.Serialize(writer, replacePathRegexMiddleware, options);
-					break;
+					return;
 				case RetryMiddleware retryMiddleware:
 					JsonSerializer.Serialize(writer, retryMiddleware, options);
-					break;
+					return;
 				case StripPrefixMiddleware stripPrefixMiddleware:
 					JsonSerializer.Serialize(writer, stripPrefixMiddleware, options);
-					break;
+					return;
+					
 				case StripPrefixRegexMiddleware stripPrefixRegexMiddleware:
 					JsonSerializer.Serialize(writer, stripPrefixRegexMiddleware, options);
-					break;
+					return;
 			}
 			throw new JsonException($"Type {value.GetType()} unsupported to serialize.");
 		}

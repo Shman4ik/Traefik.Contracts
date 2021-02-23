@@ -52,13 +52,13 @@ namespace Traefik.Contracts.HttpConfiguration
 			{
 				case LoadBalancerHttpService loadBalancerHttpService:
 					JsonSerializer.Serialize(writer, loadBalancerHttpService, options);
-					break;
+					return;
 				case MirroringHttpService mirroringHttpService:
 					JsonSerializer.Serialize(writer, mirroringHttpService, options);
-					break;
+					return;
 				case WeightedHttpService weightedHttpService:
 					JsonSerializer.Serialize(writer, weightedHttpService, options);
-					break;
+					return;
 			}
 			throw new JsonException($"Type {value.GetType()} unsupported to serialize.");
 		}

@@ -13,5 +13,4 @@ namespace Traefik.Contracts.Middlewares
 		[JsonPropertyName("requestHost")]
 		public bool requestHost { get; set; }
 	}
-
 }

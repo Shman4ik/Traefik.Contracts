@@ -33,7 +33,7 @@ namespace Traefik.Contracts.UdpConfiguration
 						{
 							var weighted = JsonSerializer.Deserialize<Weighted>(ref reader, options);
 							reader.Read();
-							return new LoadBalancerUdpService { Weighted = weighted };
+							return new WeightedUdpService { Weighted = weighted };
 						}
 				}
 			}
@@ -46,10 +46,10 @@ namespace Traefik.Contracts.UdpConfiguration
 			{
 				case LoadBalancerUdpService loadBalancerUdpService:
 					JsonSerializer.Serialize(writer, loadBalancerUdpService, options);
-					break;
+					return;
 				case WeightedUdpService weightedUdpService:
 					JsonSerializer.Serialize(writer, weightedUdpService, options);
-					break;
+					return;
 			}
 			throw new JsonException($"Type {value.GetType()} unsupported to serialize.");
 		}

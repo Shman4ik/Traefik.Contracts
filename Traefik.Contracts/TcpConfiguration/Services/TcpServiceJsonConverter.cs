@@ -46,10 +46,10 @@ namespace Traefik.Contracts.TcpConfiguration
 			{
 				case LoadBalancerTcpService loadBalancerTcpService:
 					JsonSerializer.Serialize(writer, loadBalancerTcpService, options);
-					break;
+					return;
 				case WeightedTcpService weightedTcpService:
 					JsonSerializer.Serialize(writer, weightedTcpService, options);
-					break;
+					return;
 			}
 			throw new JsonException($"Type {value.GetType()} unsupported to serialize.");
 		}
