@@ -1,5 +1,5 @@
 # Traefik.Contracts
-Библиотека с сущностями на .net которые используются в [Traefik Proxy](https://traefik.io/traefik/).
+Assembling with entities   [Traefik Proxy](https://traefik.io/traefik/).
 
 Помогает реализовать [HTTP](https://doc.traefik.io/traefik/providers/http/) провайдер для .Net сервисов.
 
@@ -8,5 +8,5 @@
 * [X] TCP support
 * [X] UDP support
 * [ ] Add comments
-* [ ] Nuget package
+* [X] Nuget package
 * [ ] AutoTest
