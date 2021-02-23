@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Traefik.Contracts.Tests", "Traefik.Contracts.Tests\Traefik.Contracts.Tests.csproj", "{BE243DA1-2E81-4F21-A51A-4273EB2EA50D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F7E5657B-4879-4135-B9B5-EC4ADDC24189}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7E5657B-4879-4135-B9B5-EC4ADDC24189}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7E5657B-4879-4135-B9B5-EC4ADDC24189}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE243DA1-2E81-4F21-A51A-4273EB2EA50D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE243DA1-2E81-4F21-A51A-4273EB2EA50D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE243DA1-2E81-4F21-A51A-4273EB2EA50D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE243DA1-2E81-4F21-A51A-4273EB2EA50D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

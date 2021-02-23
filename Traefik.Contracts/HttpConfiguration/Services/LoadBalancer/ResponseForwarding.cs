@@ -2,7 +2,7 @@
 
 namespace Traefik.Contracts.HttpConfiguration
 {
-	public class Responseforwarding
+	public class ResponseForwarding
 	{
 		[JsonPropertyName("flushInterval")]
 		public string FlushInterval { get; set; }

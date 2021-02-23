@@ -5,7 +5,7 @@ namespace Traefik.Contracts.Middlewares
 	public class DigestAuthMiddleware : BaseMiddleware
 	{
 		[JsonPropertyName("digestAuth")]
-		public DigestAuth digestAuth { get; set; }
+		public DigestAuth DigestAuth { get; set; }
 	}
 
 }

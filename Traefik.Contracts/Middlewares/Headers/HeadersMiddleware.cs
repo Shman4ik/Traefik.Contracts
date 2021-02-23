@@ -4,8 +4,8 @@ namespace Traefik.Contracts.Middlewares
 {
 	public class HeadersMiddleware : BaseMiddleware
 	{
-		[JsonPropertyName("Headers")]
-		public Headers headers { get; set; }
+		[JsonPropertyName("headers")]
+		public Headers Headers { get; set; }
 	}
 
 }

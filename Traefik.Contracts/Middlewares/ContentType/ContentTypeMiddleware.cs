@@ -5,7 +5,7 @@ namespace Traefik.Contracts.Middlewares
 	public class ContentTypeMiddleware : BaseMiddleware
 	{
 		[JsonPropertyName("contentType")]
-		public ContentType contentType { get; set; }
+		public ContentType ContentType { get; set; }
 	}
 
 }

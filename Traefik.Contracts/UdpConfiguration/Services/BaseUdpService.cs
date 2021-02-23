@@ -1,6 +1,7 @@
-﻿namespace Traefik.Contracts.UdpConfiguration
+﻿using System.Text.Json.Serialization;
+
+namespace Traefik.Contracts.UdpConfiguration
 {
-	public abstract class BaseUdpService
-	{
-	}
+	[JsonConverter(typeof(UdpServiceJsonConverter))]
+	public class BaseUdpService { }
 }

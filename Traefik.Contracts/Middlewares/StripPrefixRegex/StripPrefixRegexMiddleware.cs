@@ -5,7 +5,7 @@ namespace Traefik.Contracts.Middlewares
 	public class StripPrefixRegexMiddleware : BaseMiddleware
 	{
 		[JsonPropertyName("stripPrefixRegex")]
-		public StripPrefixRegex stripPrefixRegex { get; set; }
+		public StripPrefixRegex StripPrefixRegex { get; set; }
 	}
 
 }

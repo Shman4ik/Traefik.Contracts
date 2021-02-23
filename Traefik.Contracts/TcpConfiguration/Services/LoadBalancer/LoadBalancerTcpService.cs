@@ -1,7 +1,10 @@
-﻿namespace Traefik.Contracts.TcpConfiguration
+﻿using System.Text.Json.Serialization;
+
+namespace Traefik.Contracts.TcpConfiguration
 {
 	public class LoadBalancerTcpService : BaseTcpService
 	{
-		public LoadBalancer loadBalancer { get; set; }
+		[JsonPropertyName("loadBalancer")]
+		public LoadBalancer LoadBalancer { get; set; }
 	}
 }

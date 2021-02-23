@@ -2,7 +2,7 @@
 
 namespace Traefik.Contracts.Middlewares
 {
-	public class ErrorPageMiddleware : BaseMiddleware
+	public class ErrorsMiddleware : BaseMiddleware
 	{
 		[JsonPropertyName("errors")]
 		public Errors Errors { get; set; }

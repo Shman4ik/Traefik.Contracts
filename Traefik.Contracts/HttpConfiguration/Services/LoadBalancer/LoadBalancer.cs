@@ -2,7 +2,7 @@
 
 namespace Traefik.Contracts.HttpConfiguration
 { 
-	public class Loadbalancer
+	public class LoadBalancer
 	{
 		[JsonPropertyName("sticky")]
 		public Sticky Sticky { get; set; }
@@ -11,16 +11,15 @@ namespace Traefik.Contracts.HttpConfiguration
 		public Server[] Servers { get; set; }
 
 		[JsonPropertyName("healthCheck")]
-		public Healthcheck HealthCheck { get; set; }
+		public HealthCheck HealthCheck { get; set; }
 
 		[JsonPropertyName("passHostHeader")]
 		public bool PassHostHeader { get; set; }
 
 		[JsonPropertyName("responseForwarding")]
-		public Responseforwarding ResponseForwarding { get; set; }
+		public ResponseForwarding ResponseForwarding { get; set; }
 
 		[JsonPropertyName("serversTransport")]
 		public string ServersTransport { get; set; }
 	}
-
 }

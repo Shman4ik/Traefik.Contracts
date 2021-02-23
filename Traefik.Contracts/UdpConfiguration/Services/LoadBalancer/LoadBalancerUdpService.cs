@@ -5,6 +5,6 @@ namespace Traefik.Contracts.UdpConfiguration
 	public class LoadBalancerUdpService : BaseUdpService
 	{
 		[JsonPropertyName("loadBalancer")]
-		public LoadBalancer loadBalancer { get; set; }
+		public LoadBalancer LoadBalancer { get; set; }
 	}
 }

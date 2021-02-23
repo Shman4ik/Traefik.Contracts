@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Text.Json.Serialization;
 using Traefik.Contracts.Middlewares;
 
@@ -16,6 +17,6 @@ namespace Traefik.Contracts.HttpConfiguration
 		public Dictionary<string, BaseMiddleware> Middlewares { get; set; }
 
 		[JsonPropertyName("serversTransports")]
-		public Dictionary<string, Serverstransport> ServersTransports { get; set; }
+		public Dictionary<string, ServersTransport> ServersTransports { get; set; }
 	}
 }

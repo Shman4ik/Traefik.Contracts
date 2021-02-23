@@ -1,7 +1,10 @@
-﻿namespace Traefik.Contracts.TcpConfiguration
+﻿using System.Text.Json.Serialization;
+
+namespace Traefik.Contracts.TcpConfiguration
 {
 	public class WeightedTcpService : BaseTcpService
 	{
-		public Weighted weighted { get; set; }
+		[JsonPropertyName("weighted")]
+		public Weighted Weighted { get; set; }
 	}
 }

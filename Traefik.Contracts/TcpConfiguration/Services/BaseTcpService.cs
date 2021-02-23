@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Text.Json.Serialization;
 
 namespace Traefik.Contracts.TcpConfiguration
 {
-	public abstract class BaseTcpService
-	{
-	}
+	[JsonConverter(typeof(TcpServiceJsonConverter))]
+	public class BaseTcpService { }
 }

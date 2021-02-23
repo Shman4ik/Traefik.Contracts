@@ -1,0 +1,200 @@
+{
+	"http": {
+		"routers": {
+			"Router0": {
+				"entryPoints": [
+					"foobar",
+					"foobar"
+				],
+				"middlewares": [
+					"foobar",
+					"foobar"
+				],
+				"service": "foobar",
+				"rule": "foobar",
+				"priority": 42,
+				"tls": {
+					"options": "foobar",
+					"certResolver": "foobar",
+					"domains": [
+						{
+							"main": "foobar",
+							"sans": [
+								"foobar",
+								"foobar"
+							]
+						},
+						{
+							"main": "foobar",
+							"sans": [
+								"foobar",
+								"foobar"
+							]
+						}
+					]
+				}
+			},
+			"Router1": {
+				"entryPoints": [
+					"foobar",
+					"foobar"
+				],
+				"middlewares": [
+					"foobar",
+					"foobar"
+				],
+				"service": "foobar",
+				"rule": "foobar",
+				"priority": 42,
+				"tls": {
+					"options": "foobar",
+					"certResolver": "foobar",
+					"domains": [
+						{
+							"main": "foobar",
+							"sans": [
+								"foobar",
+								"foobar"
+							]
+						},
+						{
+							"main": "foobar",
+							"sans": [
+								"foobar",
+								"foobar"
+							]
+						}
+					]
+				}
+			}
+		},
+		"services": {
+			"Service01": {
+				"loadBalancer": {
+					"sticky": {
+						"cookie": {
+							"name": "foobar",
+							"secure": true,
+							"httpOnly": true,
+							"sameSite": "foobar"
+						}
+					},
+					"servers": [
+						{
+							"url": "foobar"
+						},
+						{
+							"url": "foobar"
+						}
+					],
+					"healthCheck": {
+						"scheme": "foobar",
+						"path": "foobar",
+						"port": 42,
+						"interval": "foobar",
+						"timeout": "foobar",
+						"hostname": "foobar",
+						"followRedirects": true,
+						"headers": {
+							"name0": "foobar",
+							"name1": "foobar"
+						}
+					},
+					"passHostHeader": true,
+					"responseForwarding": {
+						"flushInterval": "foobar"
+					},
+					"serversTransport": "foobar"
+				}
+			},
+			"Service02": {
+				"mirroring": {
+					"service": "foobar",
+					"maxBodySize": 42,
+					"mirrors": [
+						{
+							"name": "foobar",
+							"percent": 42
+						},
+						{
+							"name": "foobar",
+							"percent": 42
+						}
+					]
+				}
+			},
+			"Service03": {
+				"weighted": {
+					"services": [
+						{
+							"name": "foobar",
+							"weight": 42
+						},
+						{
+							"name": "foobar",
+							"weight": 42
+						}
+					],
+					"sticky": {
+						"cookie": {
+							"name": "foobar",
+							"secure": true,
+							"httpOnly": true,
+							"sameSite": "foobar"
+						}
+					}
+				}
+			}
+		},
+		"serversTransports": {
+			"ServersTransport0": {
+				"serverName": "foobar",
+				"insecureSkipVerify": true,
+				"rootCAs": [
+					"foobar",
+					"foobar"
+				],
+				"certificates": [
+					{
+						"certFile": "foobar",
+						"keyFile": "foobar"
+					},
+					{
+						"certFile": "foobar",
+						"keyFile": "foobar"
+					}
+				],
+				"maxIdleConnsPerHost": 42,
+				"forwardingTimeouts": {
+					"dialTimeout": "42s",
+					"responseHeaderTimeout": "42s",
+					"idleConnTimeout": "42s"
+				}
+			},
+			"ServersTransport1": {
+				"serverName": "foobar",
+				"insecureSkipVerify": true,
+				"rootCAs": [
+					"foobar",
+					"foobar"
+				],
+				"certificates": [
+					{
+						"certFile": "foobar",
+						"keyFile": "foobar"
+					},
+					{
+						"certFile": "foobar",
+						"keyFile": "foobar"
+					}
+				],
+				"maxIdleConnsPerHost": 42,
+				"forwardingTimeouts": {
+					"dialTimeout": "42s",
+					"responseHeaderTimeout": "42s",
+					"idleConnTimeout": "42s"
+				}
+			}
+		}
+	}
+}

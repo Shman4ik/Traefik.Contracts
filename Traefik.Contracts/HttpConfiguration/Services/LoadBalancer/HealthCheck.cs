@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace Traefik.Contracts.HttpConfiguration
 {
-	public class Healthcheck
+	public class HealthCheck
 	{
 		[JsonPropertyName("scheme")]
 		public string Scheme { get; set; }

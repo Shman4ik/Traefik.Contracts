@@ -19,6 +19,5 @@ namespace Traefik.Contracts
 
 		[JsonPropertyName("tls")]
 		public TlcConfiguration.Tls Tls { get; set; }
-
 	}
 }

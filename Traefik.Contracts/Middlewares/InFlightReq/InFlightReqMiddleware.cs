@@ -5,7 +5,7 @@ namespace Traefik.Contracts.Middlewares
 	public class InFlightReqMiddleware : BaseMiddleware
 	{
 		[JsonPropertyName("inFlightReq")]
-		public InFlightReq inFlightReq { get; set; }
+		public InFlightReq InFlightReq { get; set; }
 	}
 
 }

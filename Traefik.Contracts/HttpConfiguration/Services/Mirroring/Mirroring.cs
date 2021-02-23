@@ -4,13 +4,13 @@ namespace Traefik.Contracts.HttpConfiguration
 {
 	public class Mirroring
 	{
-		[JsonPropertyName("servers")]
+		[JsonPropertyName("service")]
 		public string Service { get; set; }
-		
-		[JsonPropertyName("servers")]
+
+		[JsonPropertyName("maxBodySize")]
 		public int MaxBodySize { get; set; }
-		
-		[JsonPropertyName("servers")]
+
+		[JsonPropertyName("mirrors")]
 		public Mirror[] Mirrors { get; set; }
 	}
 

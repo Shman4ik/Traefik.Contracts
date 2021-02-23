@@ -7,5 +7,4 @@ namespace Traefik.Contracts.HttpConfiguration
 		[JsonPropertyName("url")]
 		public string Url { get; set; }
 	}
-
 }

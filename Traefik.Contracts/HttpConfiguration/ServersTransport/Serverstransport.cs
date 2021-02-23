@@ -2,7 +2,7 @@
 
 namespace Traefik.Contracts.HttpConfiguration
 {
-	public class Serverstransport
+	public class ServersTransport
 	{
 		[JsonPropertyName("serverName")]
 		public string ServerName { get; set; }

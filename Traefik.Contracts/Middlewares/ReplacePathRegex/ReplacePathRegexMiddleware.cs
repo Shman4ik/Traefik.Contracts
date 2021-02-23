@@ -5,7 +5,7 @@ namespace Traefik.Contracts.Middlewares
 	public class ReplacePathRegexMiddleware : BaseMiddleware
 	{
 		[JsonPropertyName("replacePathRegex")]
-		public ReplacePathRegex replacePathRegex { get; set; }
+		public ReplacePathRegex ReplacePathRegex { get; set; }
 	}
 
 }

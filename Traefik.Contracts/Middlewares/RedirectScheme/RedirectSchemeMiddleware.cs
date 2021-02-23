@@ -5,7 +5,7 @@ namespace Traefik.Contracts.Middlewares
 	public class RedirectSchemeMiddleware : BaseMiddleware
 	{
 		[JsonPropertyName("redirectScheme")]
-		public RedirectScheme redirectScheme { get; set; }
+		public RedirectScheme RedirectScheme { get; set; }
 	}
 
 }
