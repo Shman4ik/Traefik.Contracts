@@ -7,5 +7,4 @@ namespace Traefik.Contracts.Middlewares
 		[JsonPropertyName("chain")]
 		public Chain Chain { get; set; }
 	}
-
 }

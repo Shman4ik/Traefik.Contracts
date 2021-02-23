@@ -5,9 +5,9 @@ namespace Traefik.Contracts.Middlewares
 	public class PassTLSClientCert
 	{
 		[JsonPropertyName("pem")]
-		public bool pem { get; set; }
-		[JsonPropertyName("info")]
-		public Info info { get; set; }
-	}
+		public bool Pem { get; set; }
 
+		[JsonPropertyName("info")]
+		public Info Info { get; set; }
+	}
 }

@@ -6,9 +6,9 @@ namespace Traefik.Contracts.UdpConfiguration
 	public class Udp
 	{
 		[JsonPropertyName("routers")]
-		public Dictionary<string, UdpRouter> routers { get; set; }
+		public Dictionary<string, UdpRouter> Routers { get; set; }
 
 		[JsonPropertyName("services")]
-		public Dictionary<string, BaseUdpService> services { get; set; }
+		public Dictionary<string, BaseUdpService> Services { get; set; }
 	}
 }

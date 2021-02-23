@@ -5,24 +5,24 @@ namespace Traefik.Contracts.TlcConfiguration
 	public class Options
 	{
 		[JsonPropertyName("minVersion")]
-		public string minVersion { get; set; }
-		
+		public string MinVersion { get; set; }
+
 		[JsonPropertyName("maxVersion")]
-		public string maxVersion { get; set; }
+		public string MaxVersion { get; set; }
 
 		[JsonPropertyName("cipherSuites")]
-		public string[] cipherSuites { get; set; }
+		public string[] CipherSuites { get; set; }
 
 		[JsonPropertyName("curvePreferences")]
-		public string[] curvePreferences { get; set; }
+		public string[] CurvePreferences { get; set; }
 
 		[JsonPropertyName("clientAuth")]
-		public ClientAuth clientAuth { get; set; }
+		public ClientAuth ClientAuth { get; set; }
 
 		[JsonPropertyName("sniStrict")]
-		public bool sniStrict { get; set; }
+		public bool SniStrict { get; set; }
 
 		[JsonPropertyName("preferServerCipherSuites")]
-		public bool preferServerCipherSuites { get; set; }
+		public bool PreferServerCipherSuites { get; set; }
 	}
 }

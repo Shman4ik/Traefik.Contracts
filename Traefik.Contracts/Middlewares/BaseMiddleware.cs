@@ -3,5 +3,7 @@
 namespace Traefik.Contracts.Middlewares
 {
 	[JsonConverter(typeof(MiddlewareJsonConverter))]
-	public abstract class BaseMiddleware { }
+	public abstract class BaseMiddleware
+	{
+	}
 }

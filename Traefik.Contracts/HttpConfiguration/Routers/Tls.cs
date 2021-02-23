@@ -6,10 +6,11 @@ namespace Traefik.Contracts.HttpConfiguration
 	{
 		[JsonPropertyName("options")]
 		public string Options { get; set; }
-		[JsonPropertyName("certResolver")] 
+
+		[JsonPropertyName("certResolver")]
 		public string CertResolver { get; set; }
-		[JsonPropertyName("domains")] 
+
+		[JsonPropertyName("domains")]
 		public Domain[] Domains { get; set; }
 	}
-
 }

@@ -5,9 +5,9 @@ namespace Traefik.Contracts.UdpConfiguration
 	public class Service
 	{
 		[JsonPropertyName("name")]
-		public string name { get; set; }
+		public string Name { get; set; }
 
 		[JsonPropertyName("weight")]
-		public int weight { get; set; }
+		public int Weight { get; set; }
 	}
 }

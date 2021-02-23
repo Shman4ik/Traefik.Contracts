@@ -7,5 +7,4 @@ namespace Traefik.Contracts.Middlewares
 		[JsonPropertyName("passTLSClientCert")]
 		public PassTLSClientCert PassTLSClientCert { get; set; }
 	}
-
 }

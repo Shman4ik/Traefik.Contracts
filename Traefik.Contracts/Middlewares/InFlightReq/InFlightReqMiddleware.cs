@@ -7,5 +7,4 @@ namespace Traefik.Contracts.Middlewares
 		[JsonPropertyName("inFlightReq")]
 		public InFlightReq InFlightReq { get; set; }
 	}
-
 }

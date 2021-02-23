@@ -7,5 +7,4 @@ namespace Traefik.Contracts.Middlewares
 		[JsonPropertyName("stripPrefix")]
 		public StripPrefix StripPrefix { get; set; }
 	}
-
 }

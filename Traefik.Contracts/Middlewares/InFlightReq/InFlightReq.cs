@@ -5,10 +5,9 @@ namespace Traefik.Contracts.Middlewares
 	public class InFlightReq
 	{
 		[JsonPropertyName("amount")]
-		public int amount { get; set; }
+		public int Amount { get; set; }
 
 		[JsonPropertyName("sourceCriterion")]
-		public SourceCriterion sourceCriterion { get; set; }
+		public SourceCriterion SourceCriterion { get; set; }
 	}
-
 }

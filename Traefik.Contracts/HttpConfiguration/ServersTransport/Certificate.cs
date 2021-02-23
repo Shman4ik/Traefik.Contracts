@@ -10,5 +10,4 @@ namespace Traefik.Contracts.HttpConfiguration
 		[JsonPropertyName("keyFile")]
 		public string KeyFile { get; set; }
 	}
-
 }

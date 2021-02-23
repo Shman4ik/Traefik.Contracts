@@ -5,9 +5,9 @@ namespace Traefik.Contracts.Middlewares
 	public class ReplacePathRegex
 	{
 		[JsonPropertyName("regex")]
-		public string regex { get; set; }
-		
+		public string Regex { get; set; }
+
 		[JsonPropertyName("replacement")]
-		public string replacement { get; set; }
+		public string Replacement { get; set; }
 	}
 }

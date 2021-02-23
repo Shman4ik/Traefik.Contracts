@@ -11,5 +11,4 @@ namespace Traefik.Contracts.HttpConfiguration
 		[JsonPropertyName("mirroring")]
 		public Mirroring Mirroring { get; set; }
 	}
-
 }

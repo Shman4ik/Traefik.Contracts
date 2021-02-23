@@ -22,5 +22,4 @@ namespace Traefik.Contracts.HttpConfiguration
 		[JsonPropertyName("forwardingTimeouts")]
 		public ForwardingTimeouts ForwardingTimeouts { get; set; }
 	}
-
 }

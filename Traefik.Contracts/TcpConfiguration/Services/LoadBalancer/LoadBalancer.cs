@@ -5,12 +5,12 @@ namespace Traefik.Contracts.TcpConfiguration
 	public class LoadBalancer
 	{
 		[JsonPropertyName("terminationDelay")]
-		public int terminationDelay { get; set; }
-		
+		public int TerminationDelay { get; set; }
+
 		[JsonPropertyName("proxyProtocol")]
-		public ProxyProtocol proxyProtocol { get; set; }
-		
+		public ProxyProtocol ProxyProtocol { get; set; }
+
 		[JsonPropertyName("servers")]
-		public Server[] servers { get; set; }
+		public Server[] Servers { get; set; }
 	}
 }

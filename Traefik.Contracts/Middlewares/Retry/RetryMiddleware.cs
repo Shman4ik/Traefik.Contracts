@@ -7,5 +7,4 @@ namespace Traefik.Contracts.Middlewares
 		[JsonPropertyName("retry")]
 		public Retry Retry { get; set; }
 	}
-
 }

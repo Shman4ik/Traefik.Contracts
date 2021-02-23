@@ -1,7 +1,7 @@
 ﻿using System.Text.Json.Serialization;
 
 namespace Traefik.Contracts.HttpConfiguration
-{ 
+{
 	public class LoadBalancer
 	{
 		[JsonPropertyName("sticky")]

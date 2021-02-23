@@ -7,5 +7,4 @@ namespace Traefik.Contracts.Middlewares
 		[JsonPropertyName("expression")]
 		public string Expression { get; set; }
 	}
-
 }

@@ -5,10 +5,9 @@ namespace Traefik.Contracts.Middlewares
 	public class StripPrefix
 	{
 		[JsonPropertyName("prefixes")]
-		public string[] prefixes { get; set; }
-		
-		[JsonPropertyName("forceSlash")]
-		public bool forceSlash { get; set; }
-	}
+		public string[] Prefixes { get; set; }
 
+		[JsonPropertyName("forceSlash")]
+		public bool ForceSlash { get; set; }
+	}
 }

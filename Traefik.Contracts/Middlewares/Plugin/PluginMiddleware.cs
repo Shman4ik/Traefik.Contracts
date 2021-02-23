@@ -6,6 +6,5 @@ namespace Traefik.Contracts.Middlewares
 	{
 		[JsonPropertyName("plugin")]
 		public Plugin Plugin { get; set; }
-
 	}
 }

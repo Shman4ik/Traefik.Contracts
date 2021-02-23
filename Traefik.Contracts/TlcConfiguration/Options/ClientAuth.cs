@@ -5,8 +5,9 @@ namespace Traefik.Contracts.TlcConfiguration
 	public class ClientAuth
 	{
 		[JsonPropertyName("caFiles")]
-		public string[] caFiles { get; set; }
+		public string[] CaFiles { get; set; }
+
 		[JsonPropertyName("clientAuthType")]
-		public string clientAuthType { get; set; }
+		public string ClientAuthType { get; set; }
 	}
 }

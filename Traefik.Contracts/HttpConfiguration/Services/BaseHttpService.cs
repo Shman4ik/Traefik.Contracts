@@ -3,5 +3,7 @@
 namespace Traefik.Contracts.HttpConfiguration
 {
 	[JsonConverter(typeof(HttpServiceJsonConverter))]
-	public abstract class BaseHttpService { }
+	public abstract class BaseHttpService
+	{
+	}
 }

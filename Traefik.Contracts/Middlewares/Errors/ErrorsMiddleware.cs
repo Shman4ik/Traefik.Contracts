@@ -7,5 +7,4 @@ namespace Traefik.Contracts.Middlewares
 		[JsonPropertyName("errors")]
 		public Errors Errors { get; set; }
 	}
-
 }

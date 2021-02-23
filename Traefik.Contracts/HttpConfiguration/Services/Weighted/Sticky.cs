@@ -7,5 +7,4 @@ namespace Traefik.Contracts.HttpConfiguration
 		[JsonPropertyName("cookie")]
 		public Cookie Cookie { get; set; }
 	}
-
 }

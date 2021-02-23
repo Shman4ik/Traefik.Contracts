@@ -10,5 +10,4 @@ namespace Traefik.Contracts.HttpConfiguration
 		[JsonPropertyName("weight")]
 		public int Weight { get; set; }
 	}
-
 }

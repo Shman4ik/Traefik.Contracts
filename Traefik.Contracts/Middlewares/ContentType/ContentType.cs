@@ -7,5 +7,4 @@ namespace Traefik.Contracts.Middlewares
 		[JsonPropertyName("autoDetect")]
 		public bool AutoDetect { get; set; }
 	}
-
 }

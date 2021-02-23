@@ -5,10 +5,12 @@ namespace Traefik.Contracts.Middlewares
 	public class RedirectRegex
 	{
 		[JsonPropertyName("regex")]
-		public string regex { get; set; }
+		public string Regex { get; set; }
+
 		[JsonPropertyName("replacement")]
-		public string replacement { get; set; }
+		public string Replacement { get; set; }
+
 		[JsonPropertyName("permanent")]
-		public bool permanent { get; set; }
+		public bool Permanent { get; set; }
 	}
 }

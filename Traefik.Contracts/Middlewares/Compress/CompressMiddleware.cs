@@ -7,5 +7,4 @@ namespace Traefik.Contracts.Middlewares
 		[JsonPropertyName("compress")]
 		public Compress Compress { get; set; }
 	}
-
 }

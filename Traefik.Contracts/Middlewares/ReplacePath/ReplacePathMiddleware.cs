@@ -7,5 +7,4 @@ namespace Traefik.Contracts.Middlewares
 		[JsonPropertyName("replacePath")]
 		public ReplacePath ReplacePath { get; set; }
 	}
-
 }

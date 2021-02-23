@@ -5,19 +5,24 @@ namespace Traefik.Contracts.Middlewares
 	public class Subject
 	{
 		[JsonPropertyName("country")]
-		public bool country { get; set; }
-		[JsonPropertyName("province")]
-		public bool province { get; set; }
-		[JsonPropertyName("locality")]
-		public bool locality { get; set; }
-		[JsonPropertyName("organization")]
-		public bool organization { get; set; }
-		[JsonPropertyName("commonName")]
-		public bool commonName { get; set; }
-		[JsonPropertyName("serialNumber")]
-		public bool serialNumber { get; set; }
-		[JsonPropertyName("domainComponent")]
-		public bool domainComponent { get; set; }
-	}
+		public bool Country { get; set; }
 
+		[JsonPropertyName("province")]
+		public bool Province { get; set; }
+
+		[JsonPropertyName("locality")]
+		public bool Locality { get; set; }
+
+		[JsonPropertyName("organization")]
+		public bool Organization { get; set; }
+
+		[JsonPropertyName("commonName")]
+		public bool CommonName { get; set; }
+
+		[JsonPropertyName("serialNumber")]
+		public bool SerialNumber { get; set; }
+
+		[JsonPropertyName("domainComponent")]
+		public bool DomainComponent { get; set; }
+	}
 }

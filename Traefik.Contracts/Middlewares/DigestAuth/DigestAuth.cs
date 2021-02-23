@@ -19,5 +19,4 @@ namespace Traefik.Contracts.Middlewares
 		[JsonPropertyName("headerField")]
 		public string HeaderField { get; set; }
 	}
-
 }

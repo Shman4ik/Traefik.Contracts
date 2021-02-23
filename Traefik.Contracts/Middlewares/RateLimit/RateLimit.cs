@@ -5,16 +5,15 @@ namespace Traefik.Contracts.Middlewares
 	public class RateLimit
 	{
 		[JsonPropertyName("average")]
-		public int average { get; set; }
+		public int Average { get; set; }
 
 		[JsonPropertyName("period")]
-		public int period { get; set; }
+		public int Period { get; set; }
 
 		[JsonPropertyName("burst")]
-		public int burst { get; set; }
+		public int Burst { get; set; }
 
 		[JsonPropertyName("sourceCriterion")]
-		public SourceCriterion sourceCriterion { get; set; }
+		public SourceCriterion SourceCriterion { get; set; }
 	}
-
 }

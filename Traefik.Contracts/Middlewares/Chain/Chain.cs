@@ -5,7 +5,6 @@ namespace Traefik.Contracts.Middlewares
 	public class Chain
 	{
 		[JsonPropertyName("middlewares")]
-		public string[] middlewares { get; set; }
+		public string[] Middlewares { get; set; }
 	}
-
 }

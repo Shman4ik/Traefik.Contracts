@@ -1,8 +1,8 @@
 ﻿using System.Text.Json.Serialization;
 using Traefik.Contracts.HttpConfiguration;
 using Traefik.Contracts.TcpConfiguration;
-using Traefik.Contracts.TlcConfiguration;
 using Traefik.Contracts.UdpConfiguration;
+using Tls = Traefik.Contracts.TlcConfiguration.Tls;
 
 namespace Traefik.Contracts
 {
@@ -18,6 +18,6 @@ namespace Traefik.Contracts
 		public Udp Udp { get; set; }
 
 		[JsonPropertyName("tls")]
-		public TlcConfiguration.Tls Tls { get; set; }
+		public Tls Tls { get; set; }
 	}
 }

@@ -5,12 +5,12 @@ namespace Traefik.Contracts.Middlewares
 	public class SourceCriterion
 	{
 		[JsonPropertyName("ipStrategy")]
-		public IpStrategy ipStrategy { get; set; }
+		public IpStrategy IpStrategy { get; set; }
 
 		[JsonPropertyName("requestHeaderName")]
-		public string requestHeaderName { get; set; }
+		public string RequestHeaderName { get; set; }
 
 		[JsonPropertyName("requestHost")]
-		public bool requestHost { get; set; }
+		public bool RequestHost { get; set; }
 	}
 }

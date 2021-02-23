@@ -7,5 +7,4 @@ namespace Traefik.Contracts.Middlewares
 		[JsonPropertyName("digestAuth")]
 		public DigestAuth DigestAuth { get; set; }
 	}
-
 }

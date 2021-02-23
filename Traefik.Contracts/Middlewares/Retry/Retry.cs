@@ -5,10 +5,9 @@ namespace Traefik.Contracts.Middlewares
 	public class Retry
 	{
 		[JsonPropertyName("attempts")]
-		public int attempts { get; set; }
+		public int Attempts { get; set; }
 
 		[JsonPropertyName("initialInterval")]
-		public int initialInterval { get; set; }
+		public int InitialInterval { get; set; }
 	}
-
 }

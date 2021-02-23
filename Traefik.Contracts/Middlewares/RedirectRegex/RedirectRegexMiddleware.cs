@@ -7,5 +7,4 @@ namespace Traefik.Contracts.Middlewares
 		[JsonPropertyName("redirectRegex")]
 		public RedirectRegex RedirectRegex { get; set; }
 	}
-
 }

@@ -7,5 +7,4 @@ namespace Traefik.Contracts.Middlewares
 		[JsonPropertyName("circuitBreaker")]
 		public CircuitBreaker CircuitBreaker { get; set; }
 	}
-
 }

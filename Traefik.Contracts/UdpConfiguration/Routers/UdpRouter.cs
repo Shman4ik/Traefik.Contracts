@@ -5,9 +5,9 @@ namespace Traefik.Contracts
 	public class UdpRouter
 	{
 		[JsonPropertyName("entryPoints")]
-		public string[] entryPoints { get; set; }
-		
+		public string[] EntryPoints { get; set; }
+
 		[JsonPropertyName("service")]
-		public string service { get; set; }
+		public string Service { get; set; }
 	}
 }

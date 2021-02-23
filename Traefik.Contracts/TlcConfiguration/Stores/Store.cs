@@ -5,6 +5,6 @@ namespace Traefik.Contracts.TlcConfiguration
 	public class Store
 	{
 		[JsonPropertyName("defaultCertificate")]
-		public DefaultCertificate defaultCertificate { get; set; }
+		public DefaultCertificate DefaultCertificate { get; set; }
 	}
 }

@@ -5,6 +5,6 @@ namespace Traefik.Contracts.UdpConfiguration
 	public class Server
 	{
 		[JsonPropertyName("address")]
-		public string address { get; set; }
+		public string Address { get; set; }
 	}
 }

@@ -13,5 +13,4 @@ namespace Traefik.Contracts.Middlewares
 		[JsonPropertyName("query")]
 		public string Query { get; set; }
 	}
-
 }

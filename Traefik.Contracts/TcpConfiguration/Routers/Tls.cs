@@ -1,10 +1,19 @@
-﻿namespace Traefik.Contracts.TcpConfiguration
+﻿using System.Text.Json.Serialization;
+
+namespace Traefik.Contracts.TcpConfiguration
 {
 	public class Tls
 	{
-		public bool passthrough { get; set; }
-		public string options { get; set; }
-		public string certResolver { get; set; }
-		public Domain[] domains { get; set; }
+		[JsonPropertyName("passthrough")]
+		public bool Passthrough { get; set; }
+
+		[JsonPropertyName("options")]
+		public string Options { get; set; }
+
+		[JsonPropertyName("certResolver")]
+		public string CertResolver { get; set; }
+
+		[JsonPropertyName("domains")]
+		public Domain[] Domains { get; set; }
 	}
 }

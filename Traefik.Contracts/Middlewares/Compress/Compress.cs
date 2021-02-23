@@ -7,5 +7,4 @@ namespace Traefik.Contracts.Middlewares
 		[JsonPropertyName("excludedContentTypes")]
 		public string[] ExcludedContentTypes { get; set; }
 	}
-
 }

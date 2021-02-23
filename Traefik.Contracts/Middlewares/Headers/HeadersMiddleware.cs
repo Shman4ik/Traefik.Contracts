@@ -7,5 +7,4 @@ namespace Traefik.Contracts.Middlewares
 		[JsonPropertyName("headers")]
 		public Headers Headers { get; set; }
 	}
-
 }

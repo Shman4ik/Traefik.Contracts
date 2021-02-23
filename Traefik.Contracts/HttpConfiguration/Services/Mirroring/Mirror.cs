@@ -6,6 +6,7 @@ namespace Traefik.Contracts.HttpConfiguration
 	{
 		[JsonPropertyName("name")]
 		public string Name { get; set; }
+
 		[JsonPropertyName("percent")]
 		public int Percent { get; set; }
 	}

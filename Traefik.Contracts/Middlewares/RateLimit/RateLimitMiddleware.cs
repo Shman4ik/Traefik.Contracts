@@ -7,5 +7,4 @@ namespace Traefik.Contracts.Middlewares
 		[JsonPropertyName("rateLimit")]
 		public RateLimit RateLimit { get; set; }
 	}
-
 }

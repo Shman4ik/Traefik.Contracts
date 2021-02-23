@@ -5,10 +5,12 @@ namespace Traefik.Contracts.TlcConfiguration
 	public class Certificate
 	{
 		[JsonPropertyName("certFile")]
-		public string certFile { get; set; }
+		public string CertFile { get; set; }
+
 		[JsonPropertyName("keyFile")]
-		public string keyFile { get; set; }
+		public string KeyFile { get; set; }
+
 		[JsonPropertyName("stores")]
-		public string[] stores { get; set; }
+		public string[] Stores { get; set; }
 	}
 }

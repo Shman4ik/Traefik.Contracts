@@ -1,8 +1,13 @@
-﻿namespace Traefik.Contracts.TcpConfiguration
+﻿using System.Text.Json.Serialization;
+
+namespace Traefik.Contracts.TcpConfiguration
 {
 	public class Domain
 	{
-		public string main { get; set; }
-		public string[] sans { get; set; }
+		[JsonPropertyName("main")]
+		public string Main { get; set; }
+
+		[JsonPropertyName("sans")]
+		public string[] Sans { get; set; }
 	}
 }

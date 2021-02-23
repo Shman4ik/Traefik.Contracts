@@ -7,5 +7,4 @@ namespace Traefik.Contracts.Middlewares
 		[JsonPropertyName("forwardAuth")]
 		public ForwardAuth ForwardAuth { get; set; }
 	}
-
 }

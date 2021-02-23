@@ -3,5 +3,7 @@
 namespace Traefik.Contracts.TcpConfiguration
 {
 	[JsonConverter(typeof(TcpServiceJsonConverter))]
-	public abstract class BaseTcpService { }
+	public abstract class BaseTcpService
+	{
+	}
 }
