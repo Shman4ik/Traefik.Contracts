@@ -1,7 +1,7 @@
 # Traefik.Contracts
 Assembling with entities   [Traefik Proxy](https://traefik.io/traefik/).
 
-Помогает реализовать [HTTP](https://doc.traefik.io/traefik/providers/http/) провайдер для .Net сервисов.
+Helps to implement the [HTTP](https://doc.traefik.io/traefik/providers/http/) provider for .Net services. 
 
 # RoadMap
 * [X] HTTP support
