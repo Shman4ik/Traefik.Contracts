@@ -7,11 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Traefik.Contracts", "Traefi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0AE4D6C7-4E56-412B-87F6-10D05A7F4A15}"
 	ProjectSection(SolutionItems) = preProject
+		azure-pipelines.yml = azure-pipelines.yml
 		exapmle.yml = exapmle.yml
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Traefik.Contracts.Tests", "Traefik.Contracts.Tests\Traefik.Contracts.Tests.csproj", "{BE243DA1-2E81-4F21-A51A-4273EB2EA50D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Traefik.Contracts.Tests", "Traefik.Contracts.Tests\Traefik.Contracts.Tests.csproj", "{BE243DA1-2E81-4F21-A51A-4273EB2EA50D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
