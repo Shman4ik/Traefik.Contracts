@@ -264,3 +264,4 @@ paket-files/
 
 # CodeRush
 .cr/
+/Traefik.Contracts/Traefik.Contracts.xml
